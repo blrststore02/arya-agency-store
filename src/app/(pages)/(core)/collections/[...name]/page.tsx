@@ -75,17 +75,17 @@ export default function Page({ params }: { params: { name: string } }) {
                 <div className="flex w-full flex-col h-2/5">
                     <div className="mb-4 border-b w-full border-gray-200 dark:border-gray-700">
                         <ul className="flex justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-                            <li className="me-2" role="presentation">
-                                <button className="inline-block p-4 font-['Poppins'] border-b-2 font-normal rounded-t-lg" id="men-tab" data-tabs-target="#men" type="button" role="tab" aria-controls="men" aria-selected="false">Men (10)</button>
+                            <li className="me-2 pb-4" role="presentation">
+                                <button className="inline-block px-6 py-2 font-['Poppins'] border-b-2 font-normal rounded-t-lg" id="men-tab" data-tabs-target="#men" type="button" role="tab" aria-controls="men" aria-selected="false">Men (10)</button>
                             </li>
-                            <li className="me-2" role="presentation">
-                                <button className="inline-block p-4 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="woman-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Women (10)</button>
+                            <li className="me-2 pb-4" role="presentation">
+                                <button className="inline-block px-6 py-2 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="woman-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Women (10)</button>
                             </li>
-                            <li className="me-2" role="presentation">
-                                <button className="inline-block p-4 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="kids-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Kids (10)</button>
+                            <li className="me-2 pb-4" role="presentation">
+                                <button className="inline-block px-6 py-2 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="kids-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Kids (10)</button>
                             </li>
-                            <li role="presentation">
-                                <button className="inline-block p-4 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="accessories-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Accessories (10)</button>
+                            <li role="presentation" className="pb-4">
+                                <button className="inline-block px-6 py-2 font-['Poppins'] border-b-2 rounded-t-lg font-normal hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="accessories-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Accessories (10)</button>
                             </li>
                         </ul>
                     </div>
