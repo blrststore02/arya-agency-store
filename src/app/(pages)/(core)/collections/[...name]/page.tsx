@@ -96,8 +96,8 @@ export default function Page({ params }: { params: { name: string } }) {
                     <div className="mb-4 border-b w-full flex justify-center border-gray-200 dark:border-gray-700">
                         <ul className="grid grid-cols-2 w-[70%] py-8 h-full md:grid-cols-4 gap-6 items-center justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li className="me-2 pb-4  flex justify-center items-center gap-2 w-full h-full" role="presentation">
-                                <div className="rounded w-[258px] overflow-hidden">
-                                    <div className="rounded overflow-hidden">
+                                <div className="group rounded w-[258px] relative overflow-hidden">
+                                    <div className="rounded z-10 relative overflow-hidden">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["men" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -106,11 +106,21 @@ export default function Page({ params }: { params: { name: string } }) {
                                             width="1000"
                                             height="1334" />
                                     </div>
+                                    <div className="absolute z-20 bottom-0 pointer-events-none left-0 flex flex-col w-full h-full text-white justify-center align-middle collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
+                                        <h4 className="mb-1 font-medium text-lg font-['Poppins'] title-collection h5 group-hover:-translate-y-0  transition-transform transitio transform translate-y-6 ease duration-700">
+                                            <a href="/collections/outerwear">
+                                                Men
+                                            </a>
+                                        </h4>
+                                        <p className="font-medium text-md font-['Poppins'] group-hover:-translate-y-0 group-hover:opacity-[1]  transition-all opacity-0 transform translate-y-6 ease duration-700">
+                                            10 products
+                                        </p>
+                                    </div>
                                 </div>
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
-                                <div className="rounded w-[258px] overflow-hidden">
-                                    <div className="rounded overflow-hidden">
+                                <div className="group rounded relative w-[258px] overflow-hidden">
+                                    <div className="rounded z-10 relative  overflow-hidden">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["women" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -119,11 +129,21 @@ export default function Page({ params }: { params: { name: string } }) {
                                             width="1000"
                                             height="1334" />
                                     </div>
+                                    <div className="absolute z-20 bottom-0 pointer-events-none left-0 flex flex-col w-full h-full text-white justify-center align-middle collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
+                                        <h4 className="mb-1 font-medium text-lg font-['Poppins'] title-collection h5 group-hover:-translate-y-0  transition-transform transitio transform translate-y-6 ease duration-700">
+                                            <a href="/collections/outerwear">
+                                                Women
+                                            </a>
+                                        </h4>
+                                        <p className="font-medium text-md font-['Poppins'] group-hover:-translate-y-0 group-hover:opacity-[1]  transition-all opacity-0 transform translate-y-6 ease duration-700">
+                                            10 products
+                                        </p>
+                                    </div>
                                 </div>
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
-                                <div className="rounded w-[258px] overflow-hidden">
-                                    <div className="rounded overflow-hidden">
+                                <div className="group rounded w-[258px] relative overflow-hidden">
+                                    <div className="rounded z-10 relative overflow-hidden">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["men" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -132,18 +152,38 @@ export default function Page({ params }: { params: { name: string } }) {
                                             width="1000"
                                             height="1334" />
                                     </div>
+                                    <div className="absolute z-20 bottom-0 pointer-events-none left-0 flex flex-col w-full h-full text-white justify-center align-middle collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
+                                        <h4 className="mb-1 font-medium text-lg font-['Poppins'] title-collection h5 group-hover:-translate-y-0  transition-transform transitio transform translate-y-6 ease duration-700">
+                                            <a href="/collections/outerwear">
+                                                Kids
+                                            </a>
+                                        </h4>
+                                        <p className="font-medium text-md font-['Poppins'] group-hover:-translate-y-0 group-hover:opacity-[1]  transition-all opacity-0 transform translate-y-6 ease duration-700">
+                                            10 products
+                                        </p>
+                                    </div>
                                 </div>
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
-                                <div className="rounded w-[258px] overflow-hidden">
-                                    <div className="rounded overflow-hidden">
-                                        <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
+                                <div className="group relative rounded w-[258px] overflow-hidden">
+                                    <div className="rounded z-10 relative overflow-hidden ">
+                                        <img className="collection-card__image flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["women" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
                                             alt={`${collections[params.name].title}`}
                                             loading="lazy"
                                             width="1000"
                                             height="1334" />
+                                    </div>
+                                    <div className="absolute z-20 bottom-0 pointer-events-none left-0 flex flex-col w-full h-full text-white justify-center align-middle collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
+                                        <h4 className="mb-1 font-medium text-lg font-['Poppins'] title-collection h5 group-hover:-translate-y-0  transition-transform transitio transform translate-y-6 ease duration-700">
+                                            <a href="/collections/outerwear">
+                                                Outerwear
+                                            </a>
+                                        </h4>
+                                        <p className="font-medium text-md font-['Poppins'] group-hover:-translate-y-0 group-hover:opacity-[1]  transition-all opacity-0 transform translate-y-6 ease duration-700">
+                                            10 products
+                                        </p>
                                     </div>
                                 </div>
                             </li>

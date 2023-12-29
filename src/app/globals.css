@@ -104,3 +104,11 @@ body {
   background-color: rgba(var(--section-overlay), var(--section-opacity));
   z-index: 100;
 }
+
+.collection-card__image:hover .title-collection{
+  transform: translateY(0px);
+}
+.collection-card__image:hover .item-counts{
+  opacity: 1;
+  transform: translateY(0px);
+}

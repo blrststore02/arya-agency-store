@@ -6,7 +6,7 @@ interface Map {
     [key: string]: { imageUrl: string, title: string }
 }
 
-export default function Dashboard() {
+export default function OurComany() {
 
     const [dimensions, setDimensions] = useState<any>(
         {
@@ -179,7 +179,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="mb-4 w-full flex justify-center border-gray-200 dark:border-gray-700">
-                        <ul className="grid grid-cols-2 w-[80%] py-8 h-full md:grid-cols-4 gap-20 items-center justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                        <ul className="grid grid-cols-2 w-[80%] py-8 h-full md:grid-cols-4 gap-8 items-center justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
                                 <div className="rounded w-[258px] overflow-hidden">
                                     <div className="rounded overflow-hidden">
@@ -280,10 +280,10 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="mb-4 w-full flex justify-center border-gray-200 dark:border-gray-700">
-                        <ul className="grid grid-cols-2 w-[80%] py-8 h-full md:grid-cols-4 gap-20 items-center justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                        <ul className="grid grid-cols-2 w-11/12 py-8 h-full md:grid-cols-5 gap-4 items-center justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
                                 <div className="rounded-[9999px] border-radius overflow-hidden">
-                                    <div className="rounded-[9999px] overflow-hidden w-[238px] h-[238px]">
+                                    <div className="rounded-[9999px] overflow-hidden w-[222px] h-[222px]">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["men" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -305,7 +305,7 @@ export default function Dashboard() {
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
                                 <div className="rounded-[9999px] border-radius overflow-hidden">
-                                    <div className="rounded-[9999px] overflow-hidden w-[238px] h-[238px]">
+                                    <div className="rounded-[9999px] overflow-hidden w-[222px] h-[222px]">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["women" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -327,7 +327,7 @@ export default function Dashboard() {
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
                                 <div className="rounded-[9999px] border-radius overflow-hidden">
-                                    <div className="rounded-[9999px] overflow-hidden w-[238px] h-[238px]">
+                                    <div className="rounded-[9999px] overflow-hidden w-[222px] h-[222px]">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["men" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
@@ -349,7 +349,29 @@ export default function Dashboard() {
                             </li>
                             <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
                                 <div className="rounded-[9999px] border-radius overflow-hidden">
-                                    <div className="rounded-[9999px] overflow-hidden w-[238px] h-[238px]">
+                                    <div className="rounded-[9999px] overflow-hidden w-[222px] h-[222px]">
+                                        <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
+                                            src={`${collections!["women" as string].imageUrl}`}
+                                            data-aspectratio="0.7496251874062968"
+                                            alt={`${collections["women"].title}`}
+                                            loading="lazy"
+                                            width="1000"
+                                            height="1334" />
+                                    </div>
+                                    <div className="collection-card-1-infor">
+                                        <h4 className="pt-2 m-0 ms-1 font-['Poppins'] leading-10 text-lg capitalize">
+                                            <a className="decorat" href="/collections/men">
+                                                women
+                                            </a>
+                                        </h4>
+                                        <p className="pb-0 m-0 txt-body-60 collection-count ms-1 font-['Poppins'] hidden leading-10">10 products
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="me-2 pb-4 flex justify-center items-center gap-2 w-full h-full" role="presentation">
+                                <div className="rounded-[9999px] border-radius overflow-hidden">
+                                    <div className="rounded-[9999px] overflow-hidden w-[222px] h-[222px]">
                                         <img className="flex transform transition duration-500 scale-100 overflow-hidden relative mx-auto my-0 hover:scale-110 left-0 top-0 h-full w-full z-10 object-cover object-center image-content__image scale-in lazyautosizes lazyloaded"
                                             src={`${collections!["women" as string].imageUrl}`}
                                             data-aspectratio="0.7496251874062968"
