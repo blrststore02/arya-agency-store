@@ -8,12 +8,12 @@ interface Map {
 
 export default function OurComany() {
 
-    const [dimensions, setDimensions] = useState<any>(
-        {
-            width: window!.innerWidth,
-            height: window!.innerHeight,
-        }
-    );
+    // const [dimensions, setDimensions] = useState<any>(
+    //     {
+    //         width: window!.innerWidth,
+    //         height: window!.innerHeight,
+    //     }
+    // );
 
     const collections: Map = {
         men: {
@@ -34,15 +34,15 @@ export default function OurComany() {
         }
     }
 
-    const handleResize = () => {
-        setDimensions({
-            width: window!.innerWidth,
-            height: window!.innerHeight,
-        });
-    }
+    // const handleResize = () => {
+    //     setDimensions({
+    //         width: window!.innerWidth,
+    //         height: window!.innerHeight,
+    //     });
+    // }
 
     const onPageLoad = () => {
-        window.addEventListener("resize", handleResize, false);
+        // window.addEventListener("resize", handleResize, false);
         const items: CarouselItem[] = [
             {
                 position: 0,
