@@ -4,6 +4,11 @@ import { Carousel, CarouselInterface, CarouselItem, CarouselOptions } from "flow
 
 export default function ContactUs() {
 
+    
+    useEffect(() => {
+        onPageLoad();
+    }, []);
+
     const [dimensions, setDimensions] = useState<any>(
         {
             width: window!.innerWidth,
@@ -79,10 +84,6 @@ export default function ContactUs() {
 
         carousel.cycle();
     }
-
-    useEffect(() => {
-        onPageLoad();
-    }, []);
 
     return (
         <>
