@@ -8,13 +8,6 @@ interface Map {
 
 export default function ourPartners() {
 
-    const [dimensions, setDimensions] = useState<any>(
-        {
-            width: window!.innerWidth,
-            height: window!.innerHeight,
-        }
-    );
-
     const collections: Map = {
         men: {
             imageUrl: "/men.jpg",
@@ -34,15 +27,8 @@ export default function ourPartners() {
         }
     }
 
-    const handleResize = () => {
-        setDimensions({
-            width: window!.innerWidth,
-            height: window!.innerHeight,
-        });
-    }
 
     const onPageLoad = () => {
-        window.addEventListener("resize", handleResize, false);
         const items: CarouselItem[] = [
             {
                 position: 0,
