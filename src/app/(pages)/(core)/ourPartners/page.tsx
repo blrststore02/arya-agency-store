@@ -6,7 +6,7 @@ interface Map {
     [key: string]: { imageUrl: string, title: string }
 }
 
-export default function ourPartners() {
+export default function OurPartners() {
 
     const collections: Map = {
         men: {
